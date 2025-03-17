@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Form</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <form id="form">
+    <!-- Basic Information -->
+    <fieldset>
+      <legend>Basic Information</legend>
+      <label for="id">ID:</label>
+      <input type="text" id="id" name="id" autocomplete="off"><br>
+
+      <label for="sku">SKU:</label>
+      <input type="text" id="sku" name="sku" autocomplete="off"><br>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" autocomplete="off"><br>
+
+      <label for="published">Published:</label>
+      <input type="checkbox" id="published" name="published" checked><br>
+
+      <label for="featured">Is featured?</label>
+      <input type="checkbox" id="featured" name="featured"><br>
+
+      <label for="short-description">Short description:</label>
+      <textarea id="short-description" name="short-description" autocomplete="off"></textarea><br>
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" autocomplete="off"></textarea><br>
+    </fieldset>
+
+    <!-- Stock Information -->
+    <fieldset>
+      <legend>Stock Information</legend>
+      <label for="in-stock">In stock?</label>
+      <input type="checkbox" id="in-stock" name="in-stock" autocomplete="off"><br>
+
+      <label for="stock-amount">Stock:</label>
+      <input type="number" id="stock-amount" name="stock-amount" autocomplete="off"><br>
+
+      <label for="weight">Weight (g):</label>
+      <input type="number" id="weight" name="weight" autocomplete="off"><br>
+    </fieldset>
+
+    <!-- Pricing -->
+    <fieldset>
+      <legend>Pricing</legend>
+      <label for="sale-price">Sale price:</label>
+      <input type="number" id="sale-price" name="sale-price" autocomplete="off"><br>
+
+      <label for="regular-price">Regular price:</label>
+      <input type="number" id="regular-price" name="regular-price" autocomplete="off"><br>
+    </fieldset>
+
+    <!-- Reviews -->
+    <fieldset>
+      <legend>Reviews</legend>
+      <label for="allow-reviews">Allow customer reviews?</label>
+      <input type="checkbox" id="allow-reviews" name="allow-reviews" checked><br>
+    </fieldset>
+
+    <!-- Categories -->
+    <fieldset>
+      <legend>Categories</legend>
+      <div>
+        <input type="checkbox" id="new" name="categories[]" value="new">
+        <label for="new">New</label>
+
+        <input type="checkbox" id="cleavable" name="categories[]" value="Cleavable linkers">
+        <label for="cleavable">Cleavable linkers</label>
+
+        <input type="checkbox" id="peg45" name="categories[]" value="PEG45">
+        <label for="peg45">PEG45</label>
+
+        <input type="checkbox" id="peg-lipid" name="categories[]" value="PEG-Lipid">
+        <label for="peg-lipid">PEG-Lipid</label>
+
+        <input type="checkbox" id="dspe-pegs" name="categories[]" value="DSPE-PEGs">
+        <label for="dspe-pegs">DSPE-PEGs</label>
+
+        <input type="checkbox" id="pegylation" name="categories[]" value="PEGylation Reagents">
+        <label for="pegylation">PEGylation Reagents</label>
+
+        <input type="checkbox" id="homobifunctional" name="categories[]" value="Homobifunctional PEGs">
+        <label for="homobifunctional">Homobifunctional PEGs</label>
+
+        <input type="checkbox" id="heterobifunctional" name="categories[]" value="Heterobifunctional PEGs">
+        <label for="heterobifunctional">Heterobifunctional PEGs</label>
+
+        <input type="checkbox" id="click" name="categories[]" value="Click Reagents">
+        <label for="click">Click Reagents</label>
+
+        <input type="checkbox" id="copper-free" name="categories[]" value="Copper-free Click Reagents">
+        <label for="copper-free">Copper-free Click Reagents</label>
+
+        <input type="checkbox" id="protecting-groups" name="categories[]" value="Linkers with Protecting Groups">
+        <label for="protecting-groups">Linkers with Protecting Groups</label>
+
+        <input type="checkbox" id="biotinylation" name="categories[]" value="Biotinylation Reagents">
+        <label for="biotinylation">Biotinylation Reagents</label>
+
+        <input type="checkbox" id="hydrophobic" name="categories[]" value="Hydrophobic Linkers">
+        <label for="hydrophobic">Hydrophobic Linkers</label>
+
+        <input type="checkbox" id="multi-arm" name="categories[]" value="Multi-Arm PEGs">
+        <label for="multi-arm">Multi-Arm PEGs</label>
+
+        <input type="checkbox" id="alkanethiols" name="categories[]" value="Alkanethiols for Self-Assembled Monolayers">
+        <label for="alkanethiols">Alkanethiols for Self-Assembled Monolayers</label>
+      </div>
+    </fieldset>
+
+    <!-- Attributes -->
+    <fieldset>
+      <legend>Attributes</legend>
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" autocomplete="off"><br>
+
+      <label for="synonyms">Synonyms:</label>
+      <input type="text" id="synonyms" name="synonyms" autocomplete="off"><br>
+
+      <label for="item-number">Item #:</label>
+      <input type="text" id="item-number" name="item-number" autocomplete="off"><br>
+
+      <label for="mf">M.F.</label>
+      <input type="text" id="mf" name="mf" autocomplete="off"><br>
+
+      <label for="mw">M.W:</label>
+      <input type="text" id="mw" name="mw" autocomplete="off"><br>
+
+      <label for="cas">CAS:</label>
+      <input type="text" id="cas" name="cas" autocomplete="off"><br>
+
+      <label for="appearance">Appearance:</label>
+      <input type="text" id="appearance" name="appearance" autocomplete="off"><br>
+
+      <label for="storage">Storage:</label>
+      <input type="text" id="storage" name="storage" autocomplete="off"><br>
+    </fieldset>
+
+    <!-- Variations -->
+    <fieldset>
+      <legend>Variations</legend>
+      <div id="variation_container"></div>
+      <button type="button" id="addVariation">Add Variation</button>
+    </fieldset>
+  </form>
+
+  <!-- Buttons -->
+  <div>
+    <button type="button" id="submit">Submit</button>
+    <button type="button" id="export">Export</button>
+  </div>
+
+  <!-- Output -->
+  <h3>Current output:</h3>
+  <pre id="output"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
