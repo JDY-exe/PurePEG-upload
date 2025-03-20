@@ -32,7 +32,7 @@ function submit() {
   str += document.getElementById("stock-amount").value + ","; //stock amount
   str += ",,,"; //low stock, backorder, sold individually
   str += document.getElementById("weight").value ? document.getElementById("weight").value : "1" + ","; //weight
-  str += ",,,"; //length, width, height
+  str += ",,,,"; //length, width, height
   str += document.getElementById("allow-reviews").checked ? "1,,":"0,,"; //allow reviews
   str += ","; //Sale price
   str += ",\""; //Regular price
